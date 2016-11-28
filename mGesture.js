@@ -28,8 +28,9 @@
         if(e.button === 1) {
             console.log('down');
             
-            insertCanvas()
+            e.preventDefault();
             
+            insertCanvas()
             canvas = document.getElementById('mouseTraceCanvas')
             context = canvas.getContext("2d");
 
